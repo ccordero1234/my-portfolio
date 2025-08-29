@@ -1,7 +1,5 @@
 #contact {
-  background-image: linear-gradient(135deg,
-      $primary-color 0%,
-      $secondary-color 100%);
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
@@ -15,78 +13,83 @@
     margin-top: 0;
     -webkit-clip-path: none;
   }
+}
 
-  .contact-wrapper {
-    margin-top: 3.2rem;
-    padding: 0 2rem;
-    backface-visibility: hidden;
+.contact-wrapper {
+  margin-top: 3.2rem;
+  padding: 0 2rem;
+  backface-visibility: hidden;
+}
 
-    &__text {
-      margin-bottom: 2.5rem;
-    }
+.contact-wrapper__text {
+  margin-bottom: 2.5rem;
+  font-size: 2.4rem;
 
-    &__text,
-    a {
-      font-size: 2.4rem;
-
-      @include respond(phone) {
-        font-size: 2rem;
-      }
-    }
-
-    .contact-form {
-      max-width: 500px;
-      margin: 0 auto;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 2rem 2.5rem 2.5rem 2.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      align-items: stretch;
-    }
-
-    .form-group {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    label {
-      font-weight: 600;
-      color: #000;
-      margin-bottom: 0.2rem;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 0.8rem 1rem;
-      border: 1px solid #000 !important;
-      border-radius: 0.5rem;
-      font-size: 1.6rem;
-      background: #f7f7f7;
-      transition: border-color 0.2s;
-      resize: vertical;
-    }
-
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    textarea:focus {
-      border-color: #000 !important;
-      outline: none;
-    }
-
-    button[type="submit"] {
-      margin-top: 1rem;
-      align-self: flex-end;
-      min-width: 150px;
-      font-size: 1.8rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-    }
+  @include respond(phone) {
+    font-size: 2rem;
   }
+}
+
+.contact-form {
+  min-height: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  min-height: 50px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0.8rem 1rem;
+  border: 1px solid #000 !important;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  background: #f7f7f7;
+  transition: border-color 0.2s;
+  resize: vertical;
+  color: #000;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #000 !important;
+  outline: none;
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  align-self: flex-end;
+  min-width: 150px;
+  width: auto;
+  max-width: 100%;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
