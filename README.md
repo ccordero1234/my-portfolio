@@ -3,7 +3,7 @@
 Welcome to my personal developer portfolio!  
 This website highlights my projects, skills, and experiences as a Computer Science graduate and aspiring software engineer.  
 
-👉 **[View the live portfolio here](https://your-portfolio-link.com)**  
+👉 **[View the live portfolio here](https://cesar-cordero.netlify.app/)**  
 
 ---
 
